@@ -37,7 +37,7 @@
           </div>
           <div class="modal-body" id="popupBody">
             <p>
-              Minecraft font character: <img src="about:blank" id="popupMc" />
+              Minecraft font character: <span id="popupMc"></span>
             </p>
             <p>
               Unicode character(s):
@@ -62,6 +62,10 @@
         </div>
       </div>
     </div>
+    
+    <button onclick="popup('ascii', 0, 2, [{char: '!', status: E_Statuses.sure}])">
+      test
+    </button>
 
     <!-- include the Glitch button to show what the webpage is about and
           to make it easier for folks to view source and remix -->
