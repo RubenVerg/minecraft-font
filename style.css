@@ -1,11 +1,17 @@
 /* CSS files add styling rules to your content */
 
-body {
-  font-family: helvetica, arial, sans-serif;
-  margin: 2em;
+.char {
+  display        : inline-block;
+  transform      : scale(2);
+  image-rendering: pixelated;
 }
 
-h1 {
-  font-style: italic;
-  color: #373fff;
+.cell {
+  cursor: pointer;
+  border: 1px solid rgba(190, 190, 190, 0.1);
+}
+
+#tables {
+  zoom           : 200%;
+  image-rendering: pixelated;
 }

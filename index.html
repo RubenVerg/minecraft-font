@@ -1,83 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
 
-    <title>Minecraft Font whateverer</title>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    />
-  </head>
-  <body>
-    <h1>Hi there!</h1>
+  <title>Minecraft Font whateverer</title>
 
-    <p>
-      I'm your cool new webpage. Made with
-      <a href="https://glitch.com">Glitch</a>!
-    </p>
+  <!-- import the webpage's stylesheet -->
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+</head>
 
-    <div id="popupModal" class="modal fade">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header" id="popupHeader">
-            <h5 class="modal-title" id="popupTitle">
-              Title
-            </h5>
-            <button type="button" class="close" data-dismiss="modal">
-              <span>×</span>
-            </button>
+<body class='m-4'>
+  <h1>Hi there!</h1>
+
+  <p>
+    I'm your cool new webpage. Made with
+    <a href="https://glitch.com">Glitch</a>!
+  </p>
+
+  <div id='tables' class='d-flex justify-content-center'>
+
+  </div>
+
+  <div id="popupModal" class="modal fade">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header" id="popupHeader">
+          <h5 class="modal-title" id="popupTitle">
+            Title
+          </h5>
+          <button type="button" class="close" data-dismiss="modal">
+            <span>×</span>
+          </button>
+        </div>
+        <div class="modal-body" id="popupBody">
+          <p>
+            Minecraft font character:&nbsp;&nbsp;<span id="popupMc"></span>
+          </p>
+          <p>
+            Unicode character(s):
+          </p>
+          <div id="popupTable">
           </div>
-          <div class="modal-body" id="popupBody">
-            <p>
-              Minecraft font character: <span id="popupMc"></span>
-            </p>
-            <p>
-              Unicode character(s):
-            </p>
-            <div class="row" id="popupTable"></div>
-          </div>
-          <div
-            class="modal-footer d-flex justify-content-between"
-            id="popupFooter"
-          >
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-dismiss="modal"
-            >
-              Close
-            </button>
-            <button type="button" class="btn btn-primary" id="popupCopy">
-              Copy character to clipboard
-            </button>
-          </div>
+        </div>
+        <div class="modal-footer d-flex justify-content-between" id="popupFooter">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">
+            Close
+          </button>
+          <button type="button" class="btn btn-primary" id="popupCopy">
+            Copy character to clipboard (soon&trade;)
+          </button>
         </div>
       </div>
     </div>
-    
-    <button onclick="popup('ascii', 0, 2, [{char: '!', status: E_Statuses.sure}])">
-      test
-    </button>
+  </div>
 
-    <!-- include the Glitch button to show what the webpage is about and
+  <button class='btn btn-dark' onclick="popup('ascii', 0, 3, [sure('0')])">
+    test
+  </button>
+  <button class='btn btn-danger' onclick="popup('accented', 5, 3, [sure('ā')])">
+    test2
+  </button>
+
+  <!-- include the Glitch button to show what the webpage is about and
           to make it easier for folks to view source and remix -->
-    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
-    <script src="https://button.glitch.me/button.js"></script>
+  <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+  <script src="https://button.glitch.me/button.js"></script>
 
-    <!-- Bootstrap.js -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <!-- Bootstrap.js -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
-    <!-- import the webpage's javascript file -->
-    <script src="/main.js"></script>
-  </body>
+  <!-- import the webpage's javascript file -->
+  <script src="/main.js"></script>
+  <script src="/tables.js"></script>
+  <script src="/tabler.js"></script>
+</body>
+
 </html>
