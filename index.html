@@ -36,13 +36,28 @@
             </button>
           </div>
           <div class="modal-body" id="popupBody">
-            Body
+            <p>
+              Minecraft font character: <img src="about:blank" id="popupMc" />
+            </p>
+            <p>
+              Unicode character(s):
+            </p>
+            <div class="row" id="popupTable"></div>
           </div>
-          <div class="modal-footer d-flex jus" id="popupFooter">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">
+          <div
+            class="modal-footer d-flex justify-content-between"
+            id="popupFooter"
+          >
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
               Close
             </button>
-            <button type="button"
+            <button type="button" class="btn btn-primary" id="popupCopy">
+              Copy character to clipboard
+            </button>
           </div>
         </div>
       </div>
